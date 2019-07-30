@@ -8,7 +8,7 @@ using namespace std;
 
 
 #define PYERROR(type,message,result) \
-  { PyErr_SetString(type, message); return result; }
+  { PyErr_SetString(type, message); return (result == true ? Py_RETURN_TRUE : Py_RETURN_FALSE); }
   
 #define BREAKPOINT _asm { int 3 }
 
