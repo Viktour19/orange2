@@ -29,10 +29,10 @@ using namespace std;
   #pragma warning (disable : 4251 4996)
 #endif
 
-#ifndef _MSC_VER_70
-inline double abs(double x)
-{ return fabs(x); }
-#endif
+// #ifndef _MSC_VER_70
+// inline double abs(double x)
+// { return fabs(x); }
+// #endif
 
 template<class T>
 inline T sqr(const T &x) { return x*x; }
